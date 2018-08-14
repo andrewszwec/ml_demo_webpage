@@ -22,5 +22,19 @@
       <button type="sumbit">Upload Picture</button>
     </div>
   </form>
+
+  <form action="http://travel-maps.storage.googleapis.com" method="post" enctype="multipart/form-data">
+    <input type="text" name="key" value="">
+    <input type="hidden" name="bucket" value="travel-maps">
+    <input type="hidden" name="Content-Type" value="image/jpeg">
+    <input type="hidden" name="GoogleAccessId" value="1234567890123@developer.gserviceaccount.com">
+    <input type="hidden" name="acl" value="bucket-owner-read">
+    <input type="hidden" name="success_action_redirect" value="http://www.example.com/success_notification.html">
+    <input type="hidden" name="policy" value="eyJleHBpcmF0aW9uIjogIjIwMTAtMDYtMTZUMTE6MTE6MTFaIiwNCiAiY29uZGl0aW9ucyI6IFsNCiAgWyJzdGFydHMtd2l0aCIsICJrZXkiLCAiIiBdLA0KICB7ImFjbCI6ICJidWNrZXQtb3duZXItcmVhZCIgfSwNCiAgeyJidWNrZXQiOiAidHJhdmVsLW1hcHMifSwNCiAgeyJzdWNjZXNzX2FjdGlvbl9yZWRpcmVjdCI6ICJodHRwOi8vd3d3LmV4YW1wbGUuY29tL3N1Y2Nlc3Nfbm90aWZpY2F0aW9uLmh0bWwiIH0sDQogIFsiZXEiLCAiQ29udGVudC1UeXBlIiwgImltYWdlL2pwZWciIF0sDQogIFsiY29udGVudC1sZW5ndGgtcmFuZ2UiLCAwLCAxMDAwMDAwXQ0KICBdDQp9">
+    <input type="hidden" name="signature" value="BSAMPLEaASAMPLE6SAMPLE+SAMPPLEqSAMPLEPSAMPLE+SAMPLEgSAMPLEzCPlgWREeF7oPGowkeKk7J4WApzkzxERdOQmAdrvshKSzUHg8Jqp1lw9tbiJfE2ExdOOIoJVmGLoDeAGnfzCd4fTsWcLbal9sFpqXsQI8IQi1493mw=">
+    
+    <input name="file" type="file">
+    <input type="submit" value="Upload">
+    </form>
 </body>
 </html>
